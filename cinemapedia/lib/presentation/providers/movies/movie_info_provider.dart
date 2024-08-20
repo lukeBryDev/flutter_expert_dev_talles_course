@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:cinemapedia/domain/entities/movie.dart';
 import 'package:cinemapedia/presentation/providers/movies/movies_repository_provider.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -27,7 +29,7 @@ class MovieMapNotifier extends StateNotifier<Map<String, Movie>> {
 
   Future<void> loadMovie(String movieId) async {
     if (state[movieId] != null) return;
-    print('realizando peticion http');
+    log('realizando peticion http');
     final movie = await getMovie(movieId);
     state = {...state, movieId: movie};
   }
