@@ -13,9 +13,10 @@ class BlocCounterScreen extends StatelessWidget {
         ],
       ),
       body: const Center(
-        child: Text('Cubit counter'),
+        child: Text('Counter value: xxxx'),
       ),
       floatingActionButton: Column(
+        mainAxisAlignment: MainAxisAlignment.end,
         children: [
           FloatingActionButton(
             heroTag: 1,
