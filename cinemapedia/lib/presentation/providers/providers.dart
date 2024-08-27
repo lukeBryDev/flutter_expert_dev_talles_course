@@ -5,3 +5,5 @@ export 'package:cinemapedia/presentation/providers/movies/movies_providers.dart'
 export 'package:cinemapedia/presentation/providers/movies/movies_slide_show_provider.dart';
 export 'package:cinemapedia/presentation/providers/movies/initial_loading_provider.dart';
 export 'package:cinemapedia/presentation/providers/search/search_movies_provider.dart';
+export 'package:cinemapedia/presentation/providers/storage/local_storage_provider.dart';
+export 'package:cinemapedia/presentation/providers/storage/favorite_movies_provider.dart';
